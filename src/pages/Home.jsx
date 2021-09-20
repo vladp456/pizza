@@ -16,12 +16,13 @@ function Home({items}) {
 
       <div className="content__items">
         {items ? items.map(obj =>
-          <PizzaBlock name={obj.name}
-                      price={obj.price}
-                      imageUrl={obj.imageUrl}
-                      types={obj.types}
-                      sizes={obj.sizes}
-                      key={obj.id}
+          <PizzaBlock
+            name={obj.name}
+            price={obj.price}
+            imageUrl={obj.imageUrl}
+            types={obj.types}
+            sizes={obj.sizes}
+            key={obj.id}
           />) : ''}
       </div>
     </div>
