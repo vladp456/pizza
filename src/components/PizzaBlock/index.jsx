@@ -11,11 +11,11 @@ function PizzaBlock({name, price, imageUrl, types, sizes}) {
 
   const onSelectType = (index) => {
     setActiveType(index);
-  }
+  };
 
   const onSelectSize = (index) => {
     setActiveSize(index);
-  }
+  };
 
   return (
     <div className="pizza-block">
@@ -80,14 +80,14 @@ PizzaBlock.propTypes = {
   imageUrl: PropTypes.string,
   price: PropTypes.number,
   types: PropTypes.arrayOf(PropTypes.number).isRequired,
-  sizes: PropTypes.arrayOf(PropTypes.number).isRequired,
+  sizes: PropTypes.arrayOf(PropTypes.number).isRequired
 };
 
 PizzaBlock.defaultProps = {
   name: '---',
   price: 0,
   types: [],
-  sizes: [],
+  sizes: []
 };
 
 export default PizzaBlock;
