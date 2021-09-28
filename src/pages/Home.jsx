@@ -6,7 +6,6 @@ import SortPopup from "../components/SortPopup";
 import PizzaBlock from "../components/PizzaBlock";
 import {setCategory, setSortBy} from "../redux/actions/filters";
 import {fetchPizzas} from "../redux/actions/pizzas";
-import {addPizzaToCart} from "../redux/actions/cart";
 import LoadingBlock from "../components/PizzaBlock/LoadingBlock";
 
 const categoryNames = ['Мясные', 'Вегетарианская', 'Гриль', 'Острые', 'Закрытые'];
@@ -72,7 +71,7 @@ function Home() {
                 sizes={obj.sizes}
                 key={obj.id}
                 onClickAddPizza={handleAddPizzaToCart}
-                addedCount={cartItems[obj.id] && cartItems[obj.id].length}
+                addedCount={cartItems[obj.id] && cartItems[obj.id].items.length}
               />)
           : Array(12)
             .fill(0)
