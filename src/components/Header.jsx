@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 
 import logoSvg from "../assets/img/pizza-logo.svg";
-import Button from "./Button";
+import CartButton from "./CartButton";
 
 function Header() {
   return (
@@ -19,7 +19,7 @@ function Header() {
         </Link>
 
         <Link to="/cart">
-          <Button />
+          <CartButton />
         </Link>
       </div>
     </div>
