@@ -1,6 +1,5 @@
 import React from "react";
 import {Route} from "react-router-dom";
-import {useDispatch} from "react-redux";
 
 import Header from "./components/Header";
 import Home from "./pages/Home";
