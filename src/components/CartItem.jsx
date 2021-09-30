@@ -26,7 +26,7 @@ function CartItem({id, name, type, size, totalPrice, totalCount, onRemove, onMin
 
       <div className="cart__item-info">
         <h3>{name}</h3>
-        <p>{type} тесто, {size} см.</p>
+        <p>{type} crust, {size} cm</p>
       </div>
 
       <div className="cart__item-count">

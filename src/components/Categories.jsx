@@ -7,7 +7,7 @@ const Categories = memo(function Categories({activeCategory, items, onClickCateg
       <ul>
         <li className={activeCategory === null ? 'active' : ''}
             onClick={() => onClickCategory(null)}
-        >Все</li>
+        >All</li>
 
         {items && items.map((item, index) => (
           <li className={activeCategory === index ? 'active' : ''}
@@ -21,7 +21,6 @@ const Categories = memo(function Categories({activeCategory, items, onClickCateg
 });
 
 Categories.propTypes = {
-  // activeCategory: PropTypes.oneOf([PropTypes.number, null]),
   items: PropTypes.arrayOf(PropTypes.string).isRequired,
   onClickCategory: PropTypes.func.isRequired
 };

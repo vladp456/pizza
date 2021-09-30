@@ -4,7 +4,7 @@ import classNames from "classnames";
 import Button from "../Button";
 
 function PizzaBlock({id, name, price, imageUrl, types, sizes, onClickAddPizza, addedCount}) {
-  const availableTypes = ['тонкое', 'традиционное'];
+  const availableTypes = ['thin', 'traditional'];
   const availableSizes = [26, 30, 40];
 
   const [activeType, setActiveType] = useState(types[0]);
@@ -60,7 +60,7 @@ function PizzaBlock({id, name, price, imageUrl, types, sizes, onClickAddPizza, a
                   active: activeSize === index,
                   disabled: !sizes.includes(size),
                 })}
-            >{size} см.</li>
+            >{size} cm</li>
           ))}
         </ul>
       </div>
@@ -84,7 +84,7 @@ function PizzaBlock({id, name, price, imageUrl, types, sizes, onClickAddPizza, a
               fill="white"
             />
           </svg>
-          <span>Добавить</span>
+          <span>To order</span>
           {addedCount && <i>{addedCount}</i>}
         </Button>
       </div>
